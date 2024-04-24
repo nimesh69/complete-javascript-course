@@ -79,7 +79,6 @@ function fruitProcessor(apples,oranges){
     return juice;
 }
 console.log(fruitProcessor(2,2));
-*/
 
 
 const calcAverage = (score1,score2,score3) => (score1+score2+score3)/3;
@@ -101,3 +100,29 @@ function checkWinner(averageDolphins,averageKoalas){
 }
 
 checkWinner(averageDolphins,averageKoalas);
+*/
+
+
+const friends = ['michael','Steven','Peter'];
+console.log(friends[0]);
+
+const year = new Array(1991,1984,2008,2020);
+
+console.log(year.length);
+console.log(year.length-1);
+friends[2]='nimesh';
+console.log(friends);
+
+
+const calcAge = function (birthYear){
+    return 2037 - birthYear;
+}
+
+const years = [1990,1967,2002,2010,2018];
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[3]);
+
+const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[3])]
+console.log(ages);
+
