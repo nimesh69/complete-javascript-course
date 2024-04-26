@@ -342,3 +342,22 @@ for (let i=0; i<jonasArray.length; i++){
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
 */
+
+const jonasArray = [
+    'jonas',
+    'Schmedtmann',
+    2037-1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+    console.log(jonasArray[i]);
+}
+
+for (let i=1; i<4; i++){
+    console.log(`------starting exercise ${i}`);
+    for (let j=1; j<4; j++){
+        console.log(`starting exercise ${i} and exercise ${j}`);
+    }
+}
