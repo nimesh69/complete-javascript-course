@@ -220,7 +220,6 @@ console.log(jonas);
 
 // delete jonas.twitter;
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`)
-*/
 
 const jonas = {
     firstName: 'jonas',
@@ -229,35 +228,35 @@ const jonas = {
     job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven'],
     hasDriversLicense: false,
-
+    
     // calcAge: function (birthYear){
-    //     return 2037-birthYear;
-    // }
-    // calcAge: function (){
-    //     console.log(this);
-    //     return 2037-this.birthYear;
-    // }
-    calcAge: function (){
-        // console.log(this);
-        this.age=2037 - this.birthYear;
-        return this.age;
-    },
-    getSummary: function(){
-        return `${this.firstName} is a ${this.age} old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
-    }
-};
-
-// const calcAge = function (birthYear){
-//     return 2037-birthYear;
-// }
-
-console.log(jonas.calcAge());
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.calcAge());
-console.log(jonas.calcAge());
-// console.log(jonas.calcAge(1991));
+        //     return 2037-birthYear;
+        // }
+        // calcAge: function (){
+            //     console.log(this);
+            //     return 2037-this.birthYear;
+            // }
+            calcAge: function (){
+                // console.log(this);
+                this.age=2037 - this.birthYear;
+                return this.age;
+            },
+            getSummary: function(){
+                return `${this.firstName} is a ${this.age} old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+            }
+        };
+        
+        // const calcAge = function (birthYear){
+            //     return 2037-birthYear;
+            // }
+            
+            console.log(jonas.calcAge());
+            console.log(jonas.age);
+            console.log(jonas.age);
+            console.log(jonas.age);
+            console.log(jonas.calcAge());
+            console.log(jonas.calcAge());
+            // console.log(jonas.calcAge(1991));
 // console.log(jonas['calcAge'](1991));
 
 
@@ -266,3 +265,40 @@ console.log(jonas.calcAge());
 
 // console.log(`${jonas.firstName} is a ${jonas.age} old ${jonas.job}, and he ${this.dri}`)
 console.log(jonas.getSummary());
+
+
+
+const BMIJohn ={
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 78,
+    height : 1.69,
+
+    calcBMI: function(){
+        this.BMI = this.mass /(this.height*this.height);
+        return this.BMI;
+    }
+};
+const BMIMark ={
+    firstName: 'Mark',
+    lastName: 'Miller',
+    mass: 92,
+    height : 1.95,
+
+    calcBMI: function(){
+        this.BMI = this.mass /(this.height*this.height);
+        return this.BMI;
+    }
+};
+
+
+BMIJohn.calcBMI();
+BMIMark.calcBMI();
+
+
+console.log(BMIJohn.calcBMI(),BMIMark.calcBMI());
+console.log(`${BMIJohn.BMI > BMIMark.BMI ? 'a' : 'b'}`);
+console.log(`${BMIJohn.BMI > BMIMark.BMI ? `${BMIJohn.firstName+BMIJohn.lastName}'s BMI (${BMIJohn.calcBMI()}) is higher than ${BMIMark.firstName+BMIMark.lastName} (${BMIMark.calcBMI()})` : `${BMIMark.firstName+BMIMark.lastName}'s BMI (${BMIMark.calcBMI()}) is higher than ${BMIJohn.firstName+BMIJohn.lastName} (${BMIJohn.calcBMI()})` }`);
+
+// console.log(BMIJohn.calcBMI());
+*/
