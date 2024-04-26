@@ -301,4 +301,8 @@ console.log(`${BMIJohn.BMI > BMIMark.BMI ? 'a' : 'b'}`);
 console.log(`${BMIJohn.BMI > BMIMark.BMI ? `${BMIJohn.firstName+BMIJohn.lastName}'s BMI (${BMIJohn.calcBMI()}) is higher than ${BMIMark.firstName+BMIMark.lastName} (${BMIMark.calcBMI()})` : `${BMIMark.firstName+BMIMark.lastName}'s BMI (${BMIMark.calcBMI()}) is higher than ${BMIJohn.firstName+BMIJohn.lastName} (${BMIJohn.calcBMI()})` }`);
 
 // console.log(BMIJohn.calcBMI());
+
+for (let i =1; i<=10; i++){
+    console.log(`Lifting weight repetition ${i} 💪`)
+}
 */
