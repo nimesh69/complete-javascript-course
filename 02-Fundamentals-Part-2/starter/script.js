@@ -341,7 +341,6 @@ for (let i=0; i<jonasArray.length; i++){
     if( typeof jonasArray[i] === 'number') break;
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
-*/
 
 const jonasArray = [
     'jonas',
@@ -361,3 +360,13 @@ for (let i=1; i<4; i++){
         console.log(`starting exercise ${i} and exercise ${j}`);
     }
 }
+
+rep =1;
+while (rep <=10){
+    console.log(`while: lifting weights reprtition ${rep}`);
+    rep++;
+}
+
+let dice =Marh.trunc( Math.random() * 6) + 1;
+console.log(dice);
+*/
